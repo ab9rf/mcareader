@@ -2,12 +2,19 @@ name:           mcareader
 version:        0.1
 cabal-version:  >=1.2
 build-type:     Simple
-author:         kmartin
+author:         Kelly Martin <kmartin@quivern.com>
+category:       Game
+license:        OtherLicense
+copyright:      2014-2015 Kelly Martin, kmartin@quivern.com
+maintainer:     Kelly Martin <kmartin@quivern.com>
+stability:      unstable
+homepage:       https://github.com/ab9rf/mcareader
+synopsis:       Minecraft MCA (Anvil) world save file reader
 
 library
   hs-source-dirs:  src
   build-depends:   
-                   base >= 4,
+                   base >= 4 && < 5,
                    split,
                    binary,
                    zlib,
@@ -22,4 +29,5 @@ library
                    filepath,
                    directory
   ghc-options:     -Wall
+  exposed-modules: Minecraft
 
