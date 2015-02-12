@@ -1,0 +1,25 @@
+name:           mcareader
+version:        0.1
+cabal-version:  >=1.2
+build-type:     Simple
+author:         kmartin
+
+library
+  hs-source-dirs:  src
+  build-depends:   
+                   base >= 4,
+                   split,
+                   binary,
+                   zlib,
+                   transformers,
+                   mtl,
+                   containers,
+                   attoparsec,
+                   bytestring,
+                   data-binary-ieee754,
+                   sqlite-simple,
+                   conduit,
+                   filepath,
+                   directory
+  ghc-options:     -Wall
+
